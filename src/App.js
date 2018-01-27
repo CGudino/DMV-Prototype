@@ -40,12 +40,12 @@ class App extends Component {
     }, 5300);
     setInterval(() => {
       this.setState({
-        G: this.state.F + 1
+        G: this.state.G + 1
       });
     }, 18500);
     setInterval(() => {
       this.setState({
-        C: this.state.F + 1
+        C: this.state.C + 1
       });
     }, 12350);
   }
@@ -80,6 +80,14 @@ class App extends Component {
           <h1>C{this.state.C}</h1>
         </div>
 
+        <div id='ticket'>
+          <RaisedButton
+            label='Get ticket'
+            primary={true}
+            fullWidth={true}
+            onClick={() => alert('Ticket reservations coming soon!')}
+          />
+        </div>
       </div>
     );
   }

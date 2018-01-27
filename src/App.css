@@ -25,3 +25,12 @@
   padding: 3% 0;
   margin: 5% 0;
 }
+
+#ticket {
+  position: absolute;
+  bottom: 1%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  padding: 5% 0;
+}
